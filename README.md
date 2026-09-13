@@ -2,12 +2,6 @@
 
 > Architecture, engineering decisions and debugging write-ups for a self-hosted voice and 1440p60 screen-sharing platform I built and operate. Production code is private.
 
----
-
-<img width="1743" height="1086" alt="HMD_splash" src="https://github.com/user-attachments/assets/4987e5e0-58a3-467c-a6ed-1bd4f0f6ea7c" />
-
----
-
 **Status:** in daily use since late July 2026 — first on a crew member's home
 box, on a rented dedicated server since 2026-08-23.
 **This repository documents the project. The production code is private** —
