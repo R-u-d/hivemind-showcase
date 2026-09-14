@@ -2,6 +2,12 @@
 
 > Architecture, engineering decisions and debugging write-ups for a self-hosted voice and 1440p60 screen-sharing platform I built and operate. Production code is private.
 
+---
+
+<img width="872" height="543" alt="Screenshot 2026-09-12 182435" src="https://github.com/user-attachments/assets/22288137-6d3a-48e8-9451-ea2a939053f3" />
+
+---
+
 **Status:** in daily use since late July 2026 — first on a crew member's home
 box, on a rented dedicated server since 2026-08-23.
 **This repository documents the project. The production code is private** —
