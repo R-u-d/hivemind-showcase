@@ -89,5 +89,4 @@ same share at software H.264 and 536p.
   driver forgave for six weeks.
 
 That cost was worth paying, because the alternative was not a worse screen share
-— it was not having the feature the project exists for. But it is the honest
-entry on this side of the ledger.
+— it was not having the feature the project exists for.

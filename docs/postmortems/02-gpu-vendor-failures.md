@@ -152,8 +152,8 @@ incomplete. **Fluid and pixelated at once is the signature of an encoder
 overrunning its budget, not of a bad link** — all 60 frames were encoded and
 paced correctly.
 
-Two things in that reading are still unreconciled and are worth naming rather
-than smoothing over. **Where the missing 17 Mbps went is not in the log:**
+Two things in that reading are still unreconciled. **Where the missing 17 Mbps
+went is not in the log:**
 nothing between the encoder and the wire reported a drop and the SFU logged no
 `rtpStats` at all in fifteen minutes, so the sender-side pacer shedding what
 congestion control would not carry is the obvious candidate and is reasoning, not

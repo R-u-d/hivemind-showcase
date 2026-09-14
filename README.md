@@ -116,15 +116,14 @@ wrong answers were eliminated.
 
 - **[Why the screen share would not go above 60 fps](docs/postmortems/01-screenshare-frame-rate.md)**
   Six separate faults, found in the wrong order, none of them the thing
-  originally suspected — plus a seventh that later turned out to be an artefact
-  of my own readout, which is written up rather than quietly removed. The one
-  that mattered most was a capture-API parameter I set myself, and the one that
+  originally suspected — plus a seventh that turned out to be an artefact of my
+  own readout. The one that mattered most was a capture-API parameter I set myself, and the one that
   ended the hunt was a Windows display setting no amount of reading my own code
   could have revealed. Includes the two rules that came out of it.
 - **[Why the screen share only worked on current NVIDIA cards](docs/postmortems/02-gpu-vendor-failures.md)**
   Black screens and frozen streams on AMD, and on an older NVIDIA card that
   never produced a diagnostic dump. Four root causes, two closed on hardware and
-  two with a shipped fix nobody has been able to measure yet — stated as such.
+  two with a shipped fix nobody has been able to measure yet.
   Two of the four were specification violations that one vendor's driver forgave
   and the other did not.
 
@@ -135,7 +134,7 @@ migration projects, test management. That is where the habits in these documents
 come from: the measurement log, the hypothesis table with a verdict per row, the
 discipline of writing down the theory that turned out to be wrong.
 
-Implementation is AI-assisted, and that is not hidden here. What I contribute is
+Implementation is AI-assisted. What I contribute is
 the part that cannot be delegated: deciding what to build, choosing between
 architectures, designing the instrument that will settle an argument, and judging
 whether the result actually holds up for the eight people it was built for.

@@ -16,8 +16,7 @@ a superseded decision keeps its body and gains a status line.
 **The desktop shell (Tauri).** It was in place before the decision log existed
 and there is no record of a weighed comparison against Electron. It is described
 in [../architecture.md](../architecture.md) as context. Writing it up as an ADR
-would mean reconstructing a deliberation that did not happen in that form, and a
-retrofitted ADR is worth less than an honest gap.
+would mean reconstructing a deliberation that did not happen in that form.
 
 The private repository carries a longer decision log, including several entries
 that are now dead and marked as such — an embedded VPN mesh that was ripped out

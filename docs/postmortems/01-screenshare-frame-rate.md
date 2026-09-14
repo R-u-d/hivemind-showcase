@@ -19,17 +19,16 @@ ceiling: at the 120 fps preset, a 3440×1440 share delivered **71 fps of which
 57% were duplicate frames** — about 30 fps of real motion. The 120 preset was
 measurably *worse than the 60 preset* on the same machine.
 
-That reading has its own cause, and it is deliberately not in the fault table
-below. The pacer's still-gate — "has the screen genuinely stopped, so repeat the
-last frame?" — was derived from the *requested* frame interval. At the 120 preset
+That reading has its own cause, and it is not one of the faults below. The
+pacer's still-gate — "has the screen genuinely stopped, so repeat the last
+frame?" — was derived from the *requested* frame interval. At the 120 preset
 the gate sat at 12.5 ms while the capture source was delivering a real frame
 every 14.1 ms, so every gap looked still and a duplicate went in between
 essentially every pair of real frames. Fixed in 1.7.2 by taking the longer of the
 requested interval and 1.5× the *observed* capture cadence, and confirmed the
-same day qualitatively: the viewer decoded 1440p at 90–100 fps. It is recorded
-here rather than in the fault table because it was found and closed three weeks
-before the hunt below began — and because it is the reading everything after it
-was measured against.
+same day qualitatively: the viewer decoded 1440p at 90–100 fps. That was three
+weeks before the hunt below began, and it is the reading everything after it was
+measured against.
 
 ## Why it resisted
 
@@ -71,8 +70,7 @@ In the order they were found, which is close to the reverse of their importance.
 
 ### Fault 2 — the one that was not there
 
-This row is kept because deleting it would hide the most useful thing in the
-investigation. The 8× deficit came from a single field: total bytes divided by
+The 8× deficit came from a single field: total bytes divided by
 total seconds, over the *whole* share, compared against the bitrate being asked
 for *right now*. Congestion control ramps from about 300 kbps over 20–30 seconds,
 so a 43-second share reading "4 987 kbps of 15 091 asked" is a ramp, not an
@@ -167,8 +165,7 @@ sharing.** Capping that game's frame rate gave back 3.6× the frames and 13× th
 encode time.
 
 This is the cleanest measurement in the log — one variable, same machine, same
-evening — and it is not a fault in this codebase, which is why it is not in the
-table. It is also the one the in-app advice had been giving since 1.7.0 and that
+evening — and nothing in this codebase caused it. It is also the one the in-app advice had been giving since 1.7.0 and that
 I had dismissed that same evening for want of evidence.
 
 ### The end of the chain, measured

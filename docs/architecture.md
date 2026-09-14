@@ -98,9 +98,9 @@ because a specific argument could not be settled without it, and several of them
 answered on their first use what rounds of reasoning had not. Both postmortems
 are really about that.
 
-**Two deliberate gaps remain**, named rather than hidden: the *viewer* persists
-almost nothing, so sender-versus-receiver disagreements cannot be confirmed after
-the fact; and nothing in the log was measured with two simultaneous subscribers.
+**Two gaps remain.** The *viewer* persists almost nothing, so
+sender-versus-receiver disagreements cannot be confirmed after the fact, and
+nothing in the log was measured with two simultaneous subscribers.
 
 ## Known limits
 
